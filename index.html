@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="joke-generator">
+            <h1>😂 Random Joke Generator</h1>
+            <p class="subtitle">Get a laugh with random jokes from the internet</p>
+            
+            <div class="controls">
+                <select id="jokeType" class="select-dropdown">
+                    <option value="any">Any Type</option>
+                    <option value="general">General</option>
+                    <option value="programming">Programming</option>
+                    <option value="knock-knock">Knock-Knock</option>
+                </select>
+                <button id="generateBtn" class="btn btn-primary">Get Joke</button>
+            </div>
+            
+            <div id="jokeContainer" class="joke-container">
+                <p class="placeholder">Click "Get Joke" to load a random joke!</p>
+            </div>
+            
+            <div class="action-buttons">
+                <button id="shareBtn" class="btn btn-secondary" disabled>Share</button>
+                <button id="favoriteBtn" class="btn btn-secondary" disabled>❤️ Favorite</button>
+                <button id="copyBtn" class="btn btn-secondary" disabled>Copy</button>
+            </div>
+            
+            <div class="favorites-section">
+                <h2>Saved Favorites</h2>
+                <div id="favoritesList" class="favorites-list">
+                    <p class="empty-message">No favorites yet!</p>
+                </div>
+                <button id="clearFavoritesBtn" class="btn btn-danger" style="display: none;">Clear All</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
